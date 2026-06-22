@@ -1,0 +1,10 @@
+name: Subscribe Game
+
+version: 1.0
+
+files:
+  - html
+  - css
+  - js
+  - cpp
+  - cs
