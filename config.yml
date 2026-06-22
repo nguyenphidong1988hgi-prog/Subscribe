@@ -1,10 +1,16 @@
 name: Subscribe Game
 
-version: 1.0
+version: 0.28
 
 files:
-  - html
-  - css
-  - js
-  - cpp
-  - cs
+  - index.html
+  - style.css
+  - script.js
+  - README.md
+  - main.cpp
+
+feature:
+  - Subscribe
+  - Shop
+  - LocalStorage
+  - Odometer
