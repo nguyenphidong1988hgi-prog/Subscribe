@@ -1,63 +1,16 @@
-let game={
+let subs = Number(localStorage.getItem("subs")) || 0;
 
-subs:Number(localStorage.getItem("subs"))||0,
+const display = document.getElementById("subs");
 
-price:Number(localStorage.getItem("price"))||50,
-
-power:Number(localStorage.getItem("power"))||1
-
-};
-
-
-function update(){
-
-document.getElementById("subs").innerHTML=
-game.subs.toLocaleString("en-US");
-
-document.getElementById("price").innerHTML=
-game.price;
-
-}
-
-
-function save(){
-
-localStorage.setItem("subs",game.subs);
-localStorage.setItem("price",game.price);
-localStorage.setItem("power",game.power);
-
-}
+display.innerHTML = subs.toLocaleString("en-US");
 
 
 function subscribe(){
 
-game.subs+=game.power;
+    subs++;
 
-save();
+    localStorage.setItem("subs", subs);
 
-update();
-
-}
-
-
-function openShop(){
-
-document.getElementById("shop").style.display="block";
+    display.innerHTML = subs.toLocaleString("en-US");
 
 }
-
-
-function buy(){
-
-game.power++;
-
-game.price+=50;
-
-save();
-
-update();
-
-}
-
-
-update();
