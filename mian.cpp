@@ -1,9 +1,15 @@
 #include <iostream>
 
+using namespace std;
+
 int main(){
 
-std::cout<<"Subscribe Game";
+    int subscribe = 0;
 
-return 0;
+    subscribe++;
 
+    cout << "Subscribe: "
+         << subscribe;
+
+    return 0;
 }
