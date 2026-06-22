@@ -1,9 +1,9 @@
 # Subscribe Game
 
-Game tăng Subscribe.
+Game tăng Subscribe bằng HTML CSS JS.
 
-## Features
-
+Features:
 - Subscribe
 - Shop
-- Upgrade
+- LocalStorage
+- Odometer
